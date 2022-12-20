@@ -1,0 +1,63 @@
+/* con que llame una sola vez al body puedo poner todas las propiedades separadas por ; y cambia a todo el cuerpo porque hay un solo body en cada pag */
+/* PONER SIEMPRE UN COLOR DE FONDO POR SI LA IMAGEN NO CARGA AUNQUE SEA BLANCO*/
+body {
+      background-color: white;
+      background-image: url(../imagenes/fondo.jpg);
+/*la ruta es relativa desde el css pq estamos parados en el css no en el index*/
+/*PARA SALIR DE UNA CARPETA PONGO PUNTO PUNTO BARRA ../ */
+      background-repeat: no-repeat; /*que no repita la imgaen de fondo, se puede elegir un eje y que se repita solo en ese eje*/
+      background-size: cover; /*para que imagen cubra todo el fondo, guarda que puede perder definicion*/
+      background-attachment: fixed; /*imagen queda siempre en el mismo lugar aunque scrollee*/
+      background-position: center; /*posiciona a la imagen, si pongo porcentaje lo coloca en un lugar exacto  algo%(X) algo%(Y)*/
+
+}
+
+.blancoletra {color: white;}
+.subrayado {text-decoration: underline;}
+
+header {height: 120px;
+        display: flex;
+        justify-content: space-around; /*ACOMODADO HORIZONTAL*/
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: black;
+        color: white
+} /*solid es que la linea de borde es rellena, puede ser dotted, o rayas*/
+
+.cajaderedes {height: 50px;
+             background-color: black;
+             display: flex; /*las propiedades flex van siempre a la caja no al elemento*/
+             justify-content: center;
+             justify-content: space-around;
+             align-items: center;
+}
+
+
+nav {background-color: yellow;}
+section {background-color: blue;height: 100px;overflow: auto;} /*scroll hace que la caja tenga barras para navegar en x y en y; auto pone el scroll solo necesario en x o en y*/
+aside {background-color: brown;}
+footer {height: 270px;
+        display: flex;
+        justify-content: space-around; /*ACOMODADO HORIZONTAL*/
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: black;
+        color: white
+}
+
+.infodesarrollador{display: flex;
+                  justify-content: flex-start;
+
+}
+
+.iconopagina{width: 50px;
+}
+
+.iconoredes {width: 50px;
+}
+
+.iconowhats {width: 50px;
+             position: fixed;
+             bottom: 10px;
+             right: 15px;
+}
